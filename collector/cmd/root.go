@@ -10,9 +10,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "jcollector",
 	Short: "Jcollector for logs and airflow",
-	Long: ``,
-	Run: func(cmd *cobra.Command, args []string) {
-	},
+	Long:  ``,
 }
 
 func Execute() {
