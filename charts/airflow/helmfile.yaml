@@ -1,0 +1,15 @@
+environments:
+  dev:
+    values: []
+---
+repositories:
+  - name: apache-airflow
+    url: https://airflow.apache.org
+
+releases:
+  - name: airflow
+    namespace: airflow
+    chart: apache-airflow/airflow
+    version: 1.18.0
+    values:
+      - values/{{ .Environment.Name }}/airflow.yaml
